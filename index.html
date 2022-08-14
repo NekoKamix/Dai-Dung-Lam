@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change this to your name-->
+    <meta name="author" content="Dai Dung Lam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Dai Dung Lam Website</title>
+    <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header id ="header">
+      <h1>Dai Dung Lam Website</h1>
+    </header>
+
+    <!-- top part -->
+      <div id = "top">
+        <img id ="profile" src="profile.jpg" alt="Profile picture">
+        <h2>DAI DUNG LAM</h2>
+        <h5>Web Developer</h5>
+        <span>
+          <a href="Resume.pdf" download="resume">
+            <button id ="resume"><i class="fa fa-download"></i> Resume</button>
+          </a>
+          <a href="#contactForm"><button id ="contact">Contact Me</button></a>
+        </span>
+      </div>
+      
+      <!-- personal info part -->
+      <div id = "personalInfo">
+        <!-- left side -->
+        <div class="left">
+            <h3>About Me and Academic Honesty</h3>
+            <p class="personalText">I declare that this assignment is my own work in accordance with
+               Seneca Academic Policy. No part of this assignment has been
+               copied manually or electronically from any other source
+               (including web sites) or distributed to other students.
+            </p>
+            <p><strong>Date: </strong><time  datetime ="2022-08-10"><span class="personalText">August 10th, 2022</span></time></p>
+              
+          </div>
+          
+        <!-- right side -->
+        <div class="right">
+            <h3 id ="basic">Basic Information</h3>
+            <div class="basicInfo">
+              <p><strong>AGE:</strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="personalText">21</span> <br><br>
+                  <strong>EMAIL:</strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<span class="personalText">ddlam1@myseneca.ca</span><br><br>
+                <strong>LANGUAGE:</strong>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<span class="personalText">English, Vietnamese</span> <br><br>
+                <strong>CLASS SECTION:</strong>&emsp;&emsp;&nbsp;<span class="personalText">NEE</span> <br><br>
+                <strong>STUDENTID:</strong>&emsp;&emsp;&emsp;&emsp;&nbsp;<span class="personalText">137 632 196</span> <br><br>
+                <strong>INSTRUCTOR:</strong>&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<span class="personalText">Noman Atique</span> <br><br>
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+      
+      <!-- education part -->
+      <div id = "education">
+      <h2>Education</h2>
+      <div class ="grid-container">
+        <div class ="gridItem1">
+          <p>2022-2024</p>
+          <h3>Diploma</h3>
+        </div>
+        <div class ="gridItem2">
+          <h3>Diploma</h3>
+          <p class="personalText">SENECA COLLEGE<br><br>
+          Under the supervision of Dr.Awesome<br>
+          Awarded with all scholarship in the world
+          </p>
+        </div>
+        <div class ="gridItem1">
+          <p>2024-2026</p>
+          <h3>Bachelor's Degree</h3>
+        </div>
+        <div class ="gridItem2">
+          <h3>Bachelor's Degree</h3>
+          <p class="personalText">SENECA COLLEGE<br><br>
+          Under the supervision of Dr.Awesome<br>
+          Awarded with all scholarship in the world
+        </div>
+      </div>
+      </div>
+
+      <!-- contact form part -->
+      <div id="contactForm">
+        <h3>Contact Form</h3>
+        <div class="contact">
+          <form name="myForm" id="myForm" action="https://httpbin.org/post" method="post">
+            <label for="fullName">Name</label>
+            <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name here..."  tabindex="1"  autocomplete="name"> <br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email" placeholder="Enter your email here..." tabindex="2" autocomplete="email"> <br>
+            
+            <label for="address" >Address</label>
+            <input type="text" id="address" name="Address" placeholder="Enter your address here..."tabindex="3" autocomplete="street-address"> <br>
+            
+            <label for="city">City:</label>
+            <input list="cities" name="City" id="city" placeholder="Enter your city here..." tabindex="4" >
+            <datalist id="cities">
+              <option value="Edmonton"> </option>
+              <option value="Victoria"></option>
+              <option value="Winnipeg"></option>
+              <option value="Fredericton"></option>
+              <option value="St. John's"></option>
+              <option value="Halifax"></option>
+              <option value="Toronto"></option>
+              <option value="Charlottetown"></option>
+              <option value="Quebec City"></option>
+              <option value="Regina"></option>
+              <option value="Yellowknife"></option>
+              <option value="Iqaluit"></option>
+              <option value="Whitehorse"></option>
+            </datalist> 
+            <br>
+
+            <label for="postalCode" >Postal Code:</label>
+            <input type="text" id="postalCode" name="Postal Code" placeholder="Enter your postal code here..." tabindex="5" autocomplete="postalCode"> <br>
+
+            <label for="date">Date:</label>
+            <input type ="date" id="date" name="date" tabindex="6"> <br>
+
+            <label for="radio">Please specify your reason for contact:</label>
+            <div id ="radio">
+              <input type ="radio" id ="question" name="Reason to contact" value="Question">
+              <label for="question">Question</label> <br>
+
+              <input type ="radio" id ="comment" name="Reason to contact" value="Comment">
+              <label for="comment">Comment</label> <br>
+
+              <input type ="radio" id ="hiring" name="Reason to contact" value="Hiring">
+              <label for="hiring">Hiring</label> <br>
+            </div>
+              
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." tabindex="6"></textarea>
+            <br>
+
+            <input type="submit" name="Submit" value="Send">
+            <input type ="reset" name="reset" value="Clear">
+           
+          </form>
+        </div>
+       
+      </div>
+
+
+    <!-- JavaScript Data Files -->
+    <script src="main.js"></script>
+  </body>
+</html>
